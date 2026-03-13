@@ -1,0 +1,126 @@
+<h1 id="цель-работы">Цель работы</h1>
+<h2 id="основная-цель">Основная цель</h2>
+<p>Изучить работу систем библиографии <strong>natbib</strong> и
+<strong>biblatex</strong>,<br />
+освоить полный цикл генерации ссылок через <strong>BibTeX</strong> и
+<strong>Biber</strong>,<br />
+добавлять новые записи в <code>.bib</code> и анализировать корректность
+ссылок.</p>
+<h1 id="работа-с-natbib">Работа с natbib</h1>
+<h2 id="первичная-компиляция">Первичная компиляция</h2>
+<p>Выполнена команда:</p>
+<pre><code>pdflatex biblio1.tex</code></pre>
+<figure>
+<img src="1.png" style="width:70.0%" alt="Первая компиляция natbib" />
+<figcaption aria-hidden="true">Первая компиляция natbib</figcaption>
+</figure>
+<h2 id="запуск-bibtex">Запуск BibTeX</h2>
+<pre><code>bibtex biblio1</code></pre>
+<figure>
+<img src="2.png" style="width:70.0%" alt="Запуск BibTeX" />
+<figcaption aria-hidden="true">Запуск BibTeX</figcaption>
+</figure>
+<h2 id="повторная-компиляция">Повторная компиляция</h2>
+<pre><code>pdflatex biblio1.tex
+pdflatex biblio1.tex</code></pre>
+<figure>
+<img src="3.png" style="width:70.0%" alt="Обновление ссылок" />
+<figcaption aria-hidden="true">Обновление ссылок</figcaption>
+</figure>
+<h2 id="результат-natbib">Результат natbib</h2>
+<p>Готовый PDF содержит:</p>
+<ul>
+<li>числовые ссылки (<code>[1]</code>, <code>[2]</code>);</li>
+<li>раздел <em>References</em>;</li>
+<li>корректные авторо-дата ссылки.</li>
+</ul>
+<figure>
+<img src="4.png" style="width:70.0%" alt="Результат natbib" />
+<figcaption aria-hidden="true">Результат natbib</figcaption>
+</figure>
+<h1 id="пример-natbib_example">Пример natbib_example</h1>
+<h2 id="первая-компиляция">Первая компиляция</h2>
+<pre><code>pdflatex natbib_example.tex</code></pre>
+<figure>
+<img src="5.png" style="width:70.0%" alt="Компиляция natbib_example" />
+<figcaption aria-hidden="true">Компиляция natbib_example</figcaption>
+</figure>
+<h1 id="работа-с-biblatex">Работа с biblatex</h1>
+<h2 id="первая-компиляция-1">Первая компиляция</h2>
+<pre><code>pdflatex biblatex_example.tex</code></pre>
+<figure>
+<img src="6.png" style="width:70.0%" alt="Первая компиляция biblatex" />
+<figcaption aria-hidden="true">Первая компиляция biblatex</figcaption>
+</figure>
+<h2 id="запуск-biber">Запуск Biber</h2>
+<pre><code>biber biblatex_example</code></pre>
+<figure>
+<img src="7.png" style="width:70.0%" alt="Запуск Biber" />
+<figcaption aria-hidden="true">Запуск Biber</figcaption>
+</figure>
+<h2 id="обновление-pdf">Обновление PDF</h2>
+<pre><code>pdflatex biblatex_example.tex
+pdflatex biblatex_example.tex</code></pre>
+<figure>
+<img src="8.png" style="width:70.0%" alt="Обновлённый PDF biblatex" />
+<figcaption aria-hidden="true">Обновлённый PDF biblatex</figcaption>
+</figure>
+<h2 id="результат-biblatex">Результат biblatex</h2>
+<p>Используется стиль <em>authoryear</em>, ссылки форматируются иначе,
+чем в natbib.</p>
+<figure>
+<img src="9.png" style="width:70.0%" alt="Пример стиля biblatex" />
+<figcaption aria-hidden="true">Пример стиля biblatex</figcaption>
+</figure>
+<h1 id="biblatex-стиль-numeric">biblatex — стиль numeric</h1>
+<h2 id="компиляция-numeric-версии">Компиляция numeric-версии</h2>
+<pre><code>pdflatex biblatex_numeric.tex
+biber biblatex_numeric
+pdflatex biblatex_numeric.tex
+pdflatex biblatex_numeric.tex</code></pre>
+<p><img src="10.png" style="width:70.0%" alt="Компиляция numeric" />
+<img src="11.png" style="width:70.0%" alt="Часть PDF numeric" /></p>
+<h2 id="результат-numeric">Результат numeric</h2>
+<p>Формат:</p>
+<pre><code>[2] и [1]</code></pre>
+<figure>
+<img src="12.png" style="width:70.0%" alt="Стиль numeric" />
+<figcaption aria-hidden="true">Стиль numeric</figcaption>
+</figure>
+<h2 id="ошибка-ссылок">Ошибка ссылок</h2>
+<p>Добавлена ссылка, отсутствующая в базе данных.</p>
+<figure>
+<img src="14.png" style="width:70.0%" alt="Некорректные ссылки" />
+<figcaption aria-hidden="true">Некорректные ссылки</figcaption>
+</figure>
+<h1 id="сравнение-систем">Сравнение систем</h1>
+<h2 id="natbib">natbib</h2>
+<ul>
+<li>использует <strong>BibTeX</strong><br />
+</li>
+<li>цикл: <em>LaTeX → BibTeX → LaTeX → LaTeX</em><br />
+</li>
+<li>стиль numeric через: <code>\usepackage[numbers]{natbib}</code></li>
+<li>отсутствующие ссылки → <code>?</code></li>
+</ul>
+<h2 id="biblatex">biblatex</h2>
+<ul>
+<li>использует <strong>Biber</strong><br />
+</li>
+<li>цикл: <em>LaTeX → Biber → LaTeX → LaTeX</em><br />
+</li>
+<li>стиль numeric через:
+<code>\usepackage[style=numeric]{biblatex}</code></li>
+<li>более гибкая настройка форматов</li>
+</ul>
+<h1 id="выводы">Выводы</h1>
+<h2 id="итоги-работы">Итоги работы</h2>
+<p>В ходе лабораторной работы были освоены:</p>
+<ul>
+<li>компиляция документа с использованием <strong>natbib</strong> и
+<strong>biblatex</strong>;</li>
+<li>работа с <strong>BibTeX</strong> и <strong>Biber</strong>;</li>
+<li>добавление новых записей в <code>.bib</code>;</li>
+<li>анализ корректных и отсутствующих цитат;</li>
+<li>сравнение стилей выводов ссылок, включая <code>numeric</code>.</li>
+</ul>

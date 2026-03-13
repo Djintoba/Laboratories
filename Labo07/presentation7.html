@@ -1,0 +1,147 @@
+<h1 id="цель-работы">Цель работы</h1>
+<h2 id="основная-цель">Основная цель</h2>
+<p>Изучить приёмы создания презентаций в LaTeX с использованием класса
+<strong>beamer</strong>,<br />
+включая:</p>
+<ul>
+<li>структуру слайдов;</li>
+<li>работу с блоками (<code>block</code>,
+<code>exampleblock</code>);</li>
+<li>пошаговое раскрытие элементов с <code>\pause</code>;</li>
+<li>точное управление отображением через <code>\uncover</code>;</li>
+<li>изменение тем и цветовых схем.</li>
+</ul>
+<h1 id="подготовка-файлов">Подготовка файлов</h1>
+<h2 id="файлы-примеров">Файлы примеров</h2>
+<p>В рабочей директории размещены файлы:</p>
+<ul>
+<li><code>beamer_basic.tex</code></li>
+<li><code>beamer_blocks.tex</code></li>
+<li><code>beamer_pauses.tex</code></li>
+<li><code>beamer_uncover.tex</code></li>
+<li><code>beamer_layout.tex</code></li>
+</ul>
+<figure>
+<img src="1.png" style="width:70.0%" alt="Открытие файлов" />
+<figcaption aria-hidden="true">Открытие файлов</figcaption>
+</figure>
+<h1 id="компиляция-примеров">Компиляция примеров</h1>
+<h2 id="beamer_basic.tex">beamer_basic.tex</h2>
+<p>Первая компиляция:</p>
+<ul>
+<li>отсутствует файл <code>.nav</code>;</li>
+<li>предупреждение <code>rerunfilecheck</code>.</li>
+</ul>
+<p>Результат: <strong>3-страничная презентация</strong>.</p>
+<figure>
+<img src="2.png" style="width:70.0%" alt="Компиляция basic" />
+<figcaption aria-hidden="true">Компиляция basic</figcaption>
+</figure>
+<h2 id="beamer_blocks.tex">beamer_blocks.tex</h2>
+<p>Файл демонстрирует работу <strong>блоков</strong>.</p>
+<figure>
+<img src="3.png" style="width:70.0%" alt="Компиляция blocks" />
+<figcaption aria-hidden="true">Компиляция blocks</figcaption>
+</figure>
+<h2 id="beamer_blocks.tex-1">beamer_blocks.tex</h2>
+<p>Результат:</p>
+<ul>
+<li>предупреждение о повторной компиляции,</li>
+<li>создан <strong>1-страничный PDF</strong>.</li>
+</ul>
+<figure>
+<img src="4.png" style="width:70.0%" alt="Завершение blocks" />
+<figcaption aria-hidden="true">Завершение blocks</figcaption>
+</figure>
+<h2 id="beamer_pauses.tex">beamer_pauses.tex</h2>
+<p>Пример с <code>\pause</code>:</p>
+<figure>
+<img src="5.png" style="width:70.0%" alt="Компиляция pauses" />
+<figcaption aria-hidden="true">Компиляция pauses</figcaption>
+</figure>
+<h2 id="beamer_pauses.tex-1">beamer_pauses.tex</h2>
+<p>Результат: <strong>5 страниц</strong>, соответствующие числу
+появлений объектов.</p>
+<figure>
+<img src="6.png" style="width:70.0%" alt="Завершение pauses" />
+<figcaption aria-hidden="true">Завершение pauses</figcaption>
+</figure>
+<h2 id="beamer_uncover.tex">beamer_uncover.tex</h2>
+<p>Использование <code>\uncover&lt;n-&gt;</code>:</p>
+<figure>
+<img src="7.png" style="width:70.0%" alt="Компиляция uncover" />
+<figcaption aria-hidden="true">Компиляция uncover</figcaption>
+</figure>
+<p>Результат: <strong>4 шага раскрытия</strong>.</p>
+<h2 id="beamer_layout.tex">beamer_layout.tex</h2>
+<p>Пример изменения темы и цветовой схемы.</p>
+<figure>
+<img src="8.png" style="width:70.0%" alt="Компиляция layout" />
+<figcaption aria-hidden="true">Компиляция layout</figcaption>
+</figure>
+<h2 id="beamer_layout.tex-1">beamer_layout.tex</h2>
+<p>И финальное открытие всех PDF:</p>
+<figure>
+<img src="8_1.png" style="width:70.0%" alt="Открытые PDF" />
+<figcaption aria-hidden="true">Открытые PDF</figcaption>
+</figure>
+<h1 id="просмотр-слайдов">Просмотр слайдов</h1>
+<h2 id="базовая-презентация">Базовая презентация</h2>
+<figure>
+<img src="9.png" style="width:70.0%" alt="Титульный и первый слайды" />
+<figcaption aria-hidden="true">Титульный и первый слайды</figcaption>
+</figure>
+<h2 id="базовая-презентация-1">Базовая презентация</h2>
+<figure>
+<img src="10.png" style="width:70.0%" alt="Слайд с текстом" />
+<figcaption aria-hidden="true">Слайд с текстом</figcaption>
+</figure>
+<h2 id="блоки">Блоки</h2>
+<figure>
+<img src="11.png" style="width:70.0%" alt="Блоки" />
+<figcaption aria-hidden="true">Блоки</figcaption>
+</figure>
+<h2 id="pause-пошаговое-раскрытие">Pause — пошаговое раскрытие</h2>
+<figure>
+<img src="12.png" style="width:70.0%" alt="Pause1" />
+<figcaption aria-hidden="true">Pause1</figcaption>
+</figure>
+<h2 id="pause-пошаговое-раскрытие-1">Pause — пошаговое раскрытие</h2>
+<figure>
+<img src="13.png" style="width:70.0%" alt="Pause2" />
+<figcaption aria-hidden="true">Pause2</figcaption>
+</figure>
+<h2 id="pause-пошаговое-раскрытие-2">Pause — пошаговое раскрытие</h2>
+<figure>
+<img src="14.png" style="width:70.0%" alt="Pause3" />
+<figcaption aria-hidden="true">Pause3</figcaption>
+</figure>
+<h2 id="uncover-точное-управление">Uncover — точное управление</h2>
+<figure>
+<img src="15.png" style="width:70.0%" alt="Uncover1" />
+<figcaption aria-hidden="true">Uncover1</figcaption>
+</figure>
+<h2 id="uncover-точное-управление-1">Uncover — точное управление</h2>
+<figure>
+<img src="16.png" style="width:70.0%" alt="Uncover2" />
+<figcaption aria-hidden="true">Uncover2</figcaption>
+</figure>
+<h2 id="темы-оформления">Темы оформления</h2>
+<figure>
+<img src="17.png" style="width:70.0%" alt="Смена темы" />
+<figcaption aria-hidden="true">Смена темы</figcaption>
+</figure>
+<h1 id="выводы">Выводы</h1>
+<h2 id="итоги-работы">Итоги работы</h2>
+<p>В ходе лабораторной работы были освоены:</p>
+<ul>
+<li>структура презентации beamer;</li>
+<li>работа с различными типами блоков;</li>
+<li>использование <code>\pause</code> и <code>\uncover</code> для
+анимации;</li>
+<li>применение тем (Warsaw, Copenhagen) и цветовых схем;</li>
+<li>анализ визуальных результатов и поведения механизмов beamer.</li>
+</ul>
+<p>Работа подтвердила, что <strong>beamer</strong> предоставляет гибкие
+инструменты<br />
+для создания научных и учебных презентаций в LaTeX.</p>

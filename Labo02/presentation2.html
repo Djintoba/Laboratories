@@ -1,0 +1,160 @@
+<h1 id="цель-работы">Цель работы</h1>
+<h2 id="основная-цель">Основная цель</h2>
+<p>Изучение базовых и расширенных возможностей LaTeX для набора
+математических выражений и структурированного текста, включая:</p>
+<ul>
+<li>inline и display математический режим;</li>
+<li>индексы, греческие буквы и стандартные обозначения;</li>
+<li>нумерованные и многострочные уравнения;</li>
+<li>структурирование документа разделами и подразделами.</li>
+</ul>
+<h1 id="ход-выполнения">Ход выполнения</h1>
+<h2 id="среда-и-инструменты">Среда и инструменты</h2>
+<p>В ходе работы использовались:</p>
+<ul>
+<li>дистрибутив <strong>TeX Live 2025</strong>;</li>
+<li>компилятор <strong>pdflatex</strong> (pdfTeX);</li>
+<li>стандартный класс документа <code>article</code>;</li>
+<li>пакет кодировок <code>fontenc</code>.</li>
+</ul>
+<h1 id="exercise-2.1.4">Exercise 2.1.4</h1>
+<h2 id="компиляция-исходного-файла">Компиляция исходного файла</h2>
+<p>Файл <code>exercise_2_1_4.tex</code> был скомпилирован командой
+<code>pdflatex</code>.</p>
+<p>Особенности вывода:</p>
+<ul>
+<li>загрузка класса <code>article</code> и <code>fontenc</code>;</li>
+<li>первый запуск без вспомогательного файла <code>.aux</code>;</li>
+<li>генерация шрифтов через <code>mktexpk</code>.</li>
+</ul>
+<figure>
+<img src="01.png" style="width:70.0%"
+alt="Компиляция exercise_2_1_4.tex" />
+<figcaption aria-hidden="true">Компиляция
+exercise_2_1_4.tex</figcaption>
+</figure>
+<h2 id="результат-компиляции">Результат компиляции</h2>
+<p>Полученный документ <code>exercise_2_1_4.pdf</code>
+демонстрирует:</p>
+<ul>
+<li>разбиение текста на абзацы пустыми строками;</li>
+<li>сокращение множественных пробелов до одного;</li>
+<li>применение жирного и курсивного начертания;</li>
+<li>влияние неразрывных пробелов (например, в ссылках и инициалах).</li>
+</ul>
+<figure>
+<img src="02.png" style="width:70.0%"
+alt="Результат exercise_2_1_4.pdf" />
+<figcaption aria-hidden="true">Результат exercise_2_1_4.pdf</figcaption>
+</figure>
+<h2 id="дополнительная-проверка-оформления">Дополнительная проверка
+оформления</h2>
+<p>Документ был просмотрен в увеличенном масштабе для контроля структуры
+и переносов строк.</p>
+<figure>
+<img src="06.png" style="width:70.0%"
+alt="Просмотр результата Exercise 2.1.4" />
+<figcaption aria-hidden="true">Просмотр результата Exercise
+2.1.4</figcaption>
+</figure>
+<h1 id="специальные-символы">Специальные символы</h1>
+<h2 id="компиляция-special_chars.tex">Компиляция
+<code>special_chars.tex</code></h2>
+<p>Файл <code>special_chars.tex</code> был скомпилирован с
+использованием <code>pdflatex</code>.</p>
+<p>В выводе фиксируется:</p>
+<ul>
+<li>корректная загрузка <code>article</code> и
+<code>fontenc</code>;</li>
+<li>первый запуск без <code>.aux</code>;</li>
+<li>подключение и генерация шрифтовых ресурсов.</li>
+</ul>
+<figure>
+<img src="03.png" style="width:70.0%"
+alt="Компиляция special_chars.tex" />
+<figcaption aria-hidden="true">Компиляция special_chars.tex</figcaption>
+</figure>
+<h1 id="списки">Списки</h1>
+<h2 id="компиляция-lists.tex">Компиляция <code>lists.tex</code></h2>
+<p>Файл <code>lists.tex</code> успешно скомпилирован.</p>
+<p>Результат:</p>
+<ul>
+<li>создан <code>lists.pdf</code> (1 страница);</li>
+<li>сформирован журнал <code>lists.log</code>.</li>
+</ul>
+<figure>
+<img src="04.png" style="width:70.0%" alt="Компиляция lists.tex" />
+<figcaption aria-hidden="true">Компиляция lists.tex</figcaption>
+</figure>
+<h1 id="mathematics-typing">Mathematics Typing</h1>
+<h2 id="пример-math1.pdf">Пример <code>math1.pdf</code></h2>
+<p>Документ демонстрирует:</p>
+<ul>
+<li>inline формулы внутри текста;</li>
+<li>display формулы отдельным блоком;</li>
+<li>нумерованное уравнение (<code>equation</code>);</li>
+<li>многострочные формулы с выравниванием.</li>
+</ul>
+<figure>
+<img src="05.png" style="width:70.0%"
+alt="Mathematical Examples (math1.pdf)" />
+<figcaption aria-hidden="true">Mathematical Examples
+(math1.pdf)</figcaption>
+</figure>
+<h2 id="пример-math2.pdf">Пример <code>math2.pdf</code></h2>
+<p>Во втором примере показано:</p>
+<ul>
+<li>сравнение inline и display режима;</li>
+<li>верхние и нижние индексы (<code>a^b</code>, <code>a_b</code>);</li>
+<li>греческие буквы (строчные и заглавные).</li>
+</ul>
+<figure>
+<img src="07.png" style="width:70.0%"
+alt="Inline/display и греческие буквы (math2.pdf)" />
+<figcaption aria-hidden="true">Inline/display и греческие буквы
+(math2.pdf)</figcaption>
+</figure>
+<h1 id="структура-документа">Структура документа</h1>
+<h2 id="пример-structure.pdf">Пример <code>structure.pdf</code></h2>
+<p>Документ демонстрирует:</p>
+<ul>
+<li>использование <code>\section</code> и <code>\subsection</code>;</li>
+<li>автоматическую нумерацию разделов и подразделов;</li>
+<li>пример сноски.</li>
+</ul>
+<figure>
+<img src="08.png" style="width:70.0%"
+alt="Проверка структуры документа (structure.pdf)" />
+<figcaption aria-hidden="true">Проверка структуры документа
+(structure.pdf)</figcaption>
+</figure>
+<h1 id="просмотр-результатов">Просмотр результатов</h1>
+<h2 id="открытие-pdf-файлов">Открытие PDF-файлов</h2>
+<p>После компиляции выполнено открытие и визуальная проверка
+документов:</p>
+<ul>
+<li><code>structure.pdf</code></li>
+<li><code>math1.pdf</code></li>
+<li><code>math2.pdf</code></li>
+<li><code>exercise_2_1_4.pdf</code></li>
+</ul>
+<figure>
+<img src="09.png" style="width:70.0%"
+alt="Открытие сгенерированных PDF-файлов" />
+<figcaption aria-hidden="true">Открытие сгенерированных
+PDF-файлов</figcaption>
+</figure>
+<h1 id="итоги-работы">Итоги работы</h1>
+<h2 id="вывод">Вывод</h2>
+<p>В ходе лабораторной работы были изучены и протестированы:</p>
+<ul>
+<li>правила оформления абзацев, пробелов и неразрывных пробелов;</li>
+<li>inline и display математический режим;</li>
+<li>индексы, греческие буквы и стандартные математические
+обозначения;</li>
+<li>нумерованные и многострочные уравнения;</li>
+<li>структурирование документа с разделами и подразделами.</li>
+</ul>
+<p>Все <code>.tex</code>-файлы были корректно скомпилированы в
+<strong>TeX Live 2025</strong>, а полученные результаты соответствуют
+ожидаемому поведению LaTeX.</p>
